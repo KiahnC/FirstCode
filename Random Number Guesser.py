@@ -4,7 +4,7 @@ lownum = int(input("Enter lowest number: "))
 highnum = int(input("Enter highest number: "))
 
 randomnum = random.randint(lownum, highnum)
-gussed = False
+guessed = False
 
 print(" ")
 print("Random number has been generated!")
@@ -18,8 +18,9 @@ while guessed == False:
         print("Too High!")
     if guess == randomnum:
         print("You guessed the correct number! Good job!")
-    pa = input("Play again? y/n ")
-    if pa == y:
-        continue
-    if pa == n:
-        break
+        pa = input("Play again? y/n ")
+        if pa == "y":
+            continue
+        if pa == "n":
+            break
+
